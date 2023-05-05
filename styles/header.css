@@ -1,0 +1,48 @@
+.header
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.header--logoNav
+{
+    width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #83dae9;
+    border-radius: 0 0 50px 50px;
+}
+.logo--block
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.navigation
+{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navBtn, .logo, .dopBtn
+{
+    color: rgb(0, 0, 0);
+}
+.navBtn
+{
+    font-size: 1.5em;
+    font-weight: 600;
+    background-color: #83dae9;
+}
+.logo
+{
+    font-size: 4em;
+    background-color: #83dae9;
+}

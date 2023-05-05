@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/calendar.css">
+    <title>Main</title>
+</head>
+<body>
+    <header class="header backWave">
+        <div class="header--logoNav">
+            <div class="logo---block"><button class="logo">AviaSea</button></div>
+            <div class="navigation">
+                <div class="navigation--btn"><button onclick="location='/sign.html'" class="navBtn">Sign in</button></div>
+                <div class="navigation--btn"><button onclick="location='/sign.html'" class="navBtn">Sign up</button></div>
+            </div>
+        </div>
+        <div class="header--title">
+            <div class="title"><h1 class="title--info">Search for cheap flights</h1></div>
+        </div>
+        <div class="header--filter">
+            <div class="filter--input">
+                <div class="filter--blockInput"><select class="filterInput" type="text" placeholder="Откуда">
+                                <option>Moscow</option>
+                                <option>Chelyabinsk</option>
+                                <option>Krasnodar</option>
+                                <option>Saint Petersburg</option>
+                                <option>Novosibirsk</option>
+                    </select></div>
+                <div class="filter--blockInput"><select class="filterInput" type="text" placeholder="Куда">
+                                <option>Chelyabinsk</option>
+                                <option>Moscow</option>
+                                <option>Krasnodar</option>
+                                <option>Saint Petersburg</option>
+                                <option>Novosibirsk</option>
+                    </select></div>
+                <div class="filter--blockInput">
+                    <input type="text" class="datepicker" placeholder="Поле 1">
+                    <input type="text" class="datepicker" placeholder="Поле 2">
+                </div>
+                <div class="filter--blockInput"><select class="filterInput" type="text" placeholder="Пассажиры и класс">
+                                <option>Economy</option>
+                                <option>Business</option>
+                                <option>Adults</option>
+                                <option>Teenagers</option>
+                                <option>Children</option>
+                </select></div>
+                <div class="filter--blockInput filter--button"><button class="filterBtn"><img src='/img/free-icon-search-4024513_2.png.svg' alt='#' /></button></div>
+            </div>
+            <div class="filter--blockInput filter--button"><button class="dopFlBtn">Create a complex route</button></div>
+        </div>
+    </header>
+
+    <script src="/scripts/main.js"></script>
+    <script>xCal.all("datepicker");</script>
+</body>
+</html>
