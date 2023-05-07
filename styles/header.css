@@ -13,8 +13,9 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #83dae9;
+    background-color: #299986;
     border-radius: 0 0 50px 50px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
 }
 .logo--block
 {
@@ -33,16 +34,17 @@
 }
 .navBtn, .logo, .dopBtn
 {
-    color: rgb(0, 0, 0);
+    color: #fff;
+    cursor: pointer;
 }
 .navBtn
 {
     font-size: 1.5em;
     font-weight: 600;
-    background-color: #83dae9;
+    background-color: #299986;
 }
 .logo
 {
     font-size: 4em;
-    background-color: #83dae9;
+    background-color: #299986;
 }
