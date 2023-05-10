@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/sign.css">
     <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/footer.css">
     <title>Sign</title>
 </head>
 <body>
     <header class="header backWave">
         <div class="header--logoNav">
-            <div class="logo---block"><a class="logo">AviaSea</a></div>
+            <div class="logo---block"><a onclick="location='/main.html'" class="logo">AviaSea</a></div>
             <div class="navigation">
                 <div class="navigation--btn"><a onclick="location='/sign.html'" class="navBtn">Sign in</a></div>
                 <div class="navigation--btn"><a onclick="location='/sign.html'" class="navBtn">Sign up</a></div>
@@ -21,52 +22,88 @@
 
     <div class="void-block"></div>
 
-    <div class="container" id="container">
-        <div class="form-container sign-up-container">
-            <form action="#">
-                <h1 class="headline--sign">Create Account</h1>
-                <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <span class="sign--dopText">or use your email for registration</span>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button class="SignIn--SignUp">Sign Up</button>
-            </form>
-        </div>
-        <div class="form-container sign-in-container">
-            <form action="#">
-                <h1 class="headline--sign">Sign in</h1>
-                <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <span class="sign--dopText">or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <a class="btn--a" href="#">Forgot your password?</a>
-                <button class="SignIn--SignUp">Sign In</button>
-            </form>
-        </div>
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h1>Welcome Back!</h1>
-                    <p class="sign--text">To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="signIn">Sign In</button>
-                </div>
-                <div class="overlay-panel overlay-right">
-                    <h1>Welcome Back!</h1>
-                    <p class="sign--text">To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="signUp">Sign Up</button>
+    <div class="container--flex">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1 class="headline--sign">Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span class="sign--dopText">or use your email for registration</span>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <a onclick="location='/appl.html'" class="SignIn--SignUp">Sign Up</a>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1 class="headline--sign">Sign in</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span class="sign--dopText">or use your account</span>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <a class="btn--a" href="#">Forgot your password?</a>
+                    <a onclick="location='/appl.html'" class="SignIn--SignUp">Sign In</a>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p class="sign--text">To keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Welcome Back!</h1>
+                        <p class="sign--text">To keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="void-block"></div>
+
+    <footer class="footer">
+        <div class="footer--block">
+          <div class="footer--flex">
+            <p class="footer--text">INFORMATION</p>
+            <a class="footer--info" href="#">REQUISITES</a>
+            <a class="footer--info" href="#">Privacy Policy</a>
+            <a class="footer--info" href="#">Terms of agreement</a>
+          </div>
+        </div>
+        <div class="footer--block">
+          <div class="footer--flex2">
+            <p class="footer--text">SUPPORT SERVICE</p>
+            <a class="footer--info" href="#">CONTACTS</a>
+            <a class="footer--info" href="#">Purchase returns</a>
+            <a class="footer--info" href="#">Site Map</a>
+          </div>
+        </div>
+        <div class="footer--block">
+          <div class="footer--flex3">
+            <p class="footer--text">PERSONAL AREA</p>
+            <a class="footer--info" href="#">Order history</a>
+            <a class="footer--info" href="#">Bookmarks</a>
+            <a class="footer--info" href="#">Newsletter</a>
+          </div>
+        </div>
+        <div class="apps footer--flex4">
+            <img class="apps--img" src="/img/img--footer/android.svg" alt="">
+            <img class="apps--img" src="/img/img--footer/appSrore.svg" alt="">
+            <img class="apps--img" src="/img/img--footer/googlePlay.svg" alt="">
+        </div>
+      </footer>
     <script src="/scripts/sign.js"></script>
 </body>
 </html>

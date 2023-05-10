@@ -13,13 +13,14 @@ a
     height: 8vh;
     width: 15vh;
     padding: 10%;
+    cursor: pointer;
 }
 .footer
 {
   padding: 50px;
   display: flex;
-  background: linear-gradient(#299986  , #195a4f);
-  box-shadow: 14px 0 28px 14px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+  background: linear-gradient(#195a4f  , #ffffff);
+  box-shadow: 14px 0 28px 14px #195a4f, 0 10px 10px rgba(0, 0, 0, .2);
   flex-direction: row;
   justify-content: space-evenly;
 }

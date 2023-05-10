@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/calendar.css">
     <link rel="stylesheet" href="/styles/footer.css">
-    <title>Main</title>
+    <link rel="stylesheet" href="/styles/zayvki.css">
+    <title>Applications</title>
 </head>
 <body>
     <header class="header backWave">
         <div class="header--logoNav">
             <div class="logo---block"><button class="logo">AviaSea</button></div>
             <div class="navigation">
-                <div class="navigation--btn"><button onclick="location='/sign.html'" class="navBtn">Sign in</button></div>
-                <div class="navigation--btn"><button onclick="location='/sign.html'" class="navBtn">Sign up</button></div>
+                <div class="navigation--btn"><button class="navBtn">User</button></div>
             </div>
         </div>
         <div class="header--title">
@@ -53,10 +53,18 @@
             </div>
             <div class="filter--blockInput filter--button"><button class="dopFlBtn">Create a complex route</button></div>
         </div>
+
+        <div class="zayvki">
+          <div class="zayvki--block">
+              <div class="zayvki--moi">
+                  <div class="zagolovok--moi"><p class="moi">Заявки</p></div>
+                  <div class="zayvki--text--block"><p class="zayvki--text">Вы пока не создали ни одной заявки.<br> Чтобы это сделать, нажмите на кнопку</p></div>
+                  <div class="creat--btn--block"><button class="creat--btn">Создать заявку</button></div>
+              </div>
+          </div>
+        </div>
     </header>
 
-
-    
     <footer class="footer">
         <div class="footer--block">
           <div class="footer--flex">
@@ -91,5 +99,6 @@
 
     <script src="/scripts/main.js"></script>
     <script>xCal.all("datepicker");</script>
+
 </body>
 </html>
