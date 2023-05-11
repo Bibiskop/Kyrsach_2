@@ -14,9 +14,9 @@
 <body>
     <header class="header backWave">
         <div class="header--logoNav">
-            <div class="logo---block"><button class="logo">AviaSea</button></div>
+            <div class="logo---block"><button onclick="location='/appl.html'" class="logo">AviaSea</button></div>
             <div class="navigation">
-                <div class="navigation--btn"><button class="navBtn">User</button></div>
+                <div class="navigation--btn"><button onclick="location='/main.html'" class="navBtn">User</button></div>
             </div>
         </div>
         <div class="header--title">
@@ -24,14 +24,16 @@
         </div>
         <div class="header--filter">
             <div class="filter--input">
-                <div class="filter--blockInput"><select class="filterInput" type="text" placeholder="Откуда">
+                <div class="filter--blockInput">
+                    <select class="filterInput" type="text" placeholder="Откуда">
                                 <option>Moscow</option>
                                 <option>Chelyabinsk</option>
                                 <option>Krasnodar</option>
                                 <option>Saint Petersburg</option>
                                 <option>Novosibirsk</option>
                     </select></div>
-                <div class="filter--blockInput"><select class="filterInput" type="text" placeholder="Куда">
+                <div class="filter--blockInput">
+                    <select class="filterInput" type="text" placeholder="Куда">
                                 <option>Chelyabinsk</option>
                                 <option>Moscow</option>
                                 <option>Krasnodar</option>
@@ -40,16 +42,17 @@
                     </select></div>
                 <div class="filter--blockInput">
                     <input type="text" class="datepicker" placeholder="Field 1">
-                    <input type="text" class="datepicker" placeholder="Field 2">
+                    <input type="text"class="datepicker" placeholder="Field 2">
                 </div>
-                <div class="filter--blockInput"><select class="filterInput" type="text" placeholder="Пассажиры и класс">
+                <div class="filter--blockInput">
+                  <select class="filterInput" type="text" placeholder="Пассажиры и класс">
                                 <option>Economy</option>
                                 <option>Business</option>
                                 <option>Adults</option>
                                 <option>Teenagers</option>
                                 <option>Children</option>
-                </select></div>
-                <div class="filter--blockInput filter--button"><button class="filterBtn"><img src='/img/free-icon-search-4024513_2.png.svg' alt='#' /></button></div>
+                  </select></div>
+                <div class="filter--blockInput filter--button"><button onclick="zayvka()" class="filterBtn"><img src='/img/free-icon-search-4024513_2.png.svg' alt='#' /></button></div>
             </div>
             <div class="filter--blockInput filter--button"><button class="dopFlBtn">Create a complex route</button></div>
         </div>
@@ -57,9 +60,9 @@
         <div class="zayvki">
           <div class="zayvki--block">
               <div class="zayvki--moi">
-                  <div class="zagolovok--moi"><p class="moi">Заявки</p></div>
-                  <div class="zayvki--text--block"><p class="zayvki--text">Вы пока не создали ни одной заявки.<br> Чтобы это сделать, нажмите на кнопку</p></div>
-                  <div class="creat--btn--block"><button class="creat--btn">Создать заявку</button></div>
+                  <div class="zagolovok--moi"><p class="moi">Applications</p></div>
+                  <div class="zayvki--text--block"><p class="zayvki--text">You have not created any requests yet.<br> To do this, click on the button</p></div>
+                  <div class="creat--btn--block"><button class="creat--btn">Create an application</button></div>
               </div>
           </div>
         </div>

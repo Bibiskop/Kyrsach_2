@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/calendar.css">
     <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/air.css">
     <title>Main</title>
 </head>
 <body>
     <header class="header backWave">
         <div class="header--logoNav">
-            <div class="logo---block"><button class="logo">AviaSea</button></div>
+            <div class="logo---block"><button onclick="location='/main.html'" class="logo">AviaSea</button></div>
             <div class="navigation">
                 <div class="navigation--btn"><button onclick="location='/sign.html'" class="navBtn">Sign in</button></div>
                 <div class="navigation--btn"><button onclick="location='/sign.html'" class="navBtn">Sign up</button></div>
@@ -24,39 +25,59 @@
         </div>
         <div class="header--filter">
             <div class="filter--input">
-                <div class="filter--blockInput"><select class="filterInput" type="text" placeholder="Откуда">
+                <div class="filter--blockInput"> 
+                  <select class="filterInput" type="text" placeholder="Откуда">
                                 <option>Moscow</option>
                                 <option>Chelyabinsk</option>
                                 <option>Krasnodar</option>
                                 <option>Saint Petersburg</option>
                                 <option>Novosibirsk</option>
-                    </select></div>
-                <div class="filter--blockInput"><select class="filterInput" type="text" placeholder="Куда">
+                  </select></div>
+                <div class="filter--blockInput">
+                  <select class="filterInput" type="text" placeholder="Куда">
                                 <option>Chelyabinsk</option>
                                 <option>Moscow</option>
                                 <option>Krasnodar</option>
                                 <option>Saint Petersburg</option>
                                 <option>Novosibirsk</option>
-                    </select></div>
+                  </select></div>
                 <div class="filter--blockInput">
                     <input type="text" class="datepicker" placeholder="Field 1">
                     <input type="text" class="datepicker" placeholder="Field 2">
                 </div>
-                <div class="filter--blockInput"><select class="filterInput" type="text" placeholder="Пассажиры и класс">
+                <div class="filter--blockInput">
+                  <select class="filterInput" type="text" placeholder="Пассажиры и класс">
                                 <option>Economy</option>
                                 <option>Business</option>
                                 <option>Adults</option>
                                 <option>Teenagers</option>
                                 <option>Children</option>
-                </select></div>
+                  </select></div>
                 <div class="filter--blockInput filter--button"><button class="filterBtn"><img src='/img/free-icon-search-4024513_2.png.svg' alt='#' /></button></div>
             </div>
             <div class="filter--blockInput filter--button"><button class="dopFlBtn">Create a complex route</button></div>
         </div>
     </header>
 
-    <div>
-      
+
+    <div class="offers">
+      <div class="offers--block">
+        <div>
+          <div class="img--block"><img class="offers--img" width="400" height="400" src="/img/img--air/1.jpg.svg"></div>
+        </div>
+      </div>
+
+      <div class="offers--block">
+        <div>
+          <div class="img--block"><img class="offers--img" width="400" height="400" src="/img/img--air/8.jpg.svg"></div>
+        </div>
+      </div>
+
+      <div class="offers--block">
+        <div>
+          <div class="img--block"><img class="offers--img" width="400" height="400" src="/img/img--air/9.jpg.svg"></div>
+        </div>
+      </div>
     </div>
     
     <footer class="footer">
