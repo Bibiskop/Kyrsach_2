@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles/sign.css">
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/chat.css">
     <title>Sign</title>
 </head>
 <body>
@@ -104,6 +105,18 @@
             <img class="apps--img" src="/img/img--footer/googlePlay.svg" alt="">
         </div>
       </footer>
+
+      <button class="open-button" onclick="openForm()">Chat</button>
+    <div class="chat-popup" id="myForm">
+      <form action="../action_page.php" class="form-container">
+        <h1>Support Chat</h1>
+        <label for="msg"><b>your message</b></label>
+        <textarea placeholder="Write here" name="msg" required></textarea>
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">close</button>
+      </form>
+    </div>
+    <script src="/scripts/chat.js"></script>
     <script src="/scripts/sign.js"></script>
 </body>
 </html>

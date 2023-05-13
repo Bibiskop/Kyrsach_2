@@ -1,28 +1,8 @@
 .header
 {
-    height: 110vh;
+    height: 140vh;
 }
 
-.lc, .moi
-{
-    color: #48423B;
-    font-weight: bold;
-}
-.zagolovok-lc
-{
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-.lc
-{
-    font-size: 2em;
-}
-.moi
-{
-    width: 10%;
-    padding: 40px;
-    font-size: 1.5em;
-}
 .zayvki
 {
     width: 100%;
@@ -42,140 +22,88 @@ background: #299986 url('/img/img--back/1627190118_13-kartinkin-com-p-serii-fon-
 */
 .zayvki--moi
 {
+    box-shadow: 14px 28px 28px 14px rgba(0, 0, 0, .2), 10px 10px 10px 10px rgba(0, 0, 0, .2); 
+    padding: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 50%;
-    background-color: white;
-    border-radius: 15px;
-}
-.zayvki--info
-{
-    display: flex;
-    padding-bottom: 0.5em;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    width: 80%;
+    background-color: white;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
 }
-.info--zayvok
+.zayvki--pathTime
 {
-    font-size: 0.9em;
-    color: #888;
-}
-.zayvki--nav
-{
-    width: 50%;
-    padding: 25px;
+    height: 10vh;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    background-color: white;
-    border-radius: 5%;
+    justify-content: space-between;
 }
-.btn
+.time--block
 {
-    color: black;
-    font-weight: bolder;
-    font-size: 1em;
-    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
 }
-.nav--btn
+.path--block
 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.zayvki--pathClass
+{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+.class--block
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.price--block
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn--block
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.time
+{
+    font-size: 3vh;
+}
+.path
+{
+    font-size: 1.8vh;
+}
+.class
+{
+   font-size: 3vh; 
+}
+.price
+{
+    font-size: 2.5vh;
+}
+.zayvki--btn
+{
+    font-size: 2.5vh;
+    background-color: #ca2f1b;
     padding: 5px;
-}
-.block--line
-{
-    width: 100%;
-    border-bottom: #888 solid 1px;
-}
-.zayvki--sami
-{
-    width: 100%;
-    text-align: center;
-    padding-top: 0.5em;
-}
-.zayvki--text--block
-{
-    padding-bottom: 3%;
-}
-.zayvki--text
-{
-    font-size: 0.8em;
-    color: #888
-}
-.creat--btn--block
-{
-    padding-bottom: 5%;
-}
-.creat--btn
-{
-    width: 150px;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    font-weight: 500;
+    border-radius: 10px;
     color: white;
-    height: 50px;
-    border-radius: 15px;
-    background-color: #299986;
 }
-.creat--btn:hover
+.line
+{   height: 10vh;
+    border-right: 2px solid black ;
+}
+#zayvki
 {
-    background-color: #0d5a4d;
+    display: none;
 }
-
-    .open-button {
-      background-color: #BE3455;
-      color: rgb(14, 1, 1);
-      padding: 16px 20px;
-      border: none;
-      cursor: pointer;
-      opacity: 0.8;
-      position: fixed;
-      bottom: 23px;
-      right: 28px;
-    }
-    .chat-popup {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      right: 15px;
-      border: 3px solid #f1f1f1;
-      z-index: 9;
-    }
-    .form-container {
-      max-width: 300px;
-      padding: 10px;
-      background-color: #BE3455;
-    }
-    .form-container textarea {
-      width: 100%;
-      padding: 15px;
-      margin: 5px 0 22px 0;
-      border: none;
-      background: #f1f1f1;
-      resize: none;
-      min-height: 200px;
-    }
-    .form-container textarea:focus {
-      background-color: #ddd;
-      outline: none;
-    }
-    .form-container .btn {
-      background-color: #4CAF50;
-      color: white;
-      padding: 16px 20px;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-      margin-bottom:10px;
-      opacity: 0.8;
-    }
-    .form-container .cancel {
-      background-color: red;
-    }
-    .form-container .btn:hover, .open-button:hover {
-      opacity: 1;
-    }

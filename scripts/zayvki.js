@@ -1,5 +1,3 @@
-function zayvka()
-{
-let input = document.getElementById("inputObj");
-console.log(input.value)
-}
+function viewDiv(){
+    document.getElementById("zayvki").style.display = "block";
+  };

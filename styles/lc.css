@@ -1,0 +1,196 @@
+.lc, .moi
+{
+    font-weight: bold;
+}
+.zagolovok-lc
+{
+    padding-top: 100px;
+    padding-left: 100px;
+}
+.lc
+{
+    color: #ffffff;
+    font-size: 2em;
+}
+.moi
+{
+    color: #48423B;
+    width: 10%;
+    padding: 40px;
+    font-size: 1.5em;
+}
+.zayvki
+{
+    padding: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.zayvki--block
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.zayvki--moi
+{
+    padding: 20px;
+    background-color: white;
+    width: 50%;
+    border-radius: 15px;
+    height: 40vh;
+}
+.block--moi
+{
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.zayvki--info
+{
+    display: flex;
+    padding-bottom: 0.5em;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.info--zayvok
+{
+    font-size: 0.9em;
+    color: #888;
+}
+.zayvki--nav
+{
+    height: 22vh;
+    width: 20%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background-color: white;
+    border-radius: 15px;
+}
+.btn
+{
+    color: black;
+    font-weight: bolder;
+    font-size: 1em;
+    text-decoration: none;
+}
+.nav--btn
+{
+    padding: 5px;
+}
+.block--line
+{
+    width: 100%;
+    border-bottom: #888 solid 1px;
+}
+.zayvki--sami
+{
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5em;
+}
+.zayvki--text
+{
+    font-size: 0.8em;
+    color: #888
+}
+.creat--btn
+{
+    width: 150px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #299986;
+}
+.creat--btn:hover
+{
+    background-color: #1a6e60;
+}
+.zayvki--pathTime
+{
+    height: 10vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.time--block
+{
+    display: flex;
+    justify-content: space-between;
+}
+.path--block
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.zayvki--pathClass
+{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.class--block
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.price--block
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn--block
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.time
+{
+    font-size: 3vh;
+}
+.path
+{
+    font-size: 1.8vh;
+}
+.class
+{
+   font-size: 3vh; 
+}
+.price
+{
+    font-size: 2.5vh;
+}
+.zayvki--btn
+{
+    width: 10vh;
+    font-size: 2.5vh;
+    background-color: #ca2f1b;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+.pad--btn
+{
+    padding-left:10px ;
+}
+.voidZav
+{
+    width: 30%;
+}

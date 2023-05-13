@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/styles/calendar.css">
     <link rel="stylesheet" href="/styles/footer.css">
     <link rel="stylesheet" href="/styles/zayvki.css">
+    <link rel="stylesheet" href="/styles/chat.css">
     <title>Applications</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
         <div class="header--logoNav">
             <div class="logo---block"><button onclick="location='/appl.html'" class="logo">AviaSea</button></div>
             <div class="navigation">
-                <div class="navigation--btn"><button onclick="location='/main.html'" class="navBtn">User</button></div>
+                <div class="navigation--btn"><button onclick="location='/lc.html'" class="navBtn">User</button></div>
             </div>
         </div>
         <div class="header--title">
@@ -52,18 +53,106 @@
                                 <option>Teenagers</option>
                                 <option>Children</option>
                   </select></div>
-                <div class="filter--blockInput filter--button"><button onclick="zayvka()" class="filterBtn"><img src='/img/free-icon-search-4024513_2.png.svg' alt='#' /></button></div>
+                <div class="filter--blockInput filter--button"><button class="filterBtn" value="Click" onmousedown="viewDiv()"><img src='/img/free-icon-search-4024513_2.png.svg' alt='#' /></button></div>
             </div>
             <div class="filter--blockInput filter--button"><button class="dopFlBtn">Create a complex route</button></div>
         </div>
 
-        <div class="zayvki">
+        <div class="zayvki" id="zayvki">
           <div class="zayvki--block">
               <div class="zayvki--moi">
-                  <div class="zagolovok--moi"><p class="moi">Applications</p></div>
-                  <div class="zayvki--text--block"><p class="zayvki--text">You have not created any requests yet.<br> To do this, click on the button</p></div>
-                  <div class="creat--btn--block"><button class="creat--btn">Create an application</button></div>
+                  <div class="zayvki--pathTime">
+                    <div class="time--block">
+                      <div class="time">00:30</div>
+                      <div class="time">02:05</div>
+                    </div>
+                    <div class="path--block">
+                      <div class="path">May 18, Thu</div>
+                      <div class="path">on the way 1h 35min</div>
+                      <div class="path">May 18, Thu</div>
+                    </div>
+                  </div>
+                  <span class="line"> </span>
+                  <div class="zayvki--pathClass">
+                    <div class="class--block">
+                      <div class="class">Economy Basic</div>
+                      <div class="class">Economy Standard</div>
+                      <div class="class">Economy Plus</div>
+                    </div>
+                    <div class="price--block">
+                      <div class="price">3 072 ₽</div>
+                      <div class="price">5 072 ₽</div>
+                      <div class="price">14 297 ₽</div>
+                    </div>
+                    <div class="btn--block">
+                      <div><button onclick="location='/lc.html'" class="zayvki--btn">Choose</button></div>
+                      <div><button onclick="location='/lc.html'" class="zayvki--btn">Choose</button></div>
+                      <div><button onclick="location='/lc.html'" class="zayvki--btn">Choose</button></div>
+                    </div>
+                  </div>
               </div>
+              <div class="zayvki--moi">
+                <div class="zayvki--pathTime">
+                  <div class="time--block">
+                    <div class="time">02:10</div>
+                    <div class="time">03:10</div>
+                  </div>
+                  <div class="path--block">
+                    <div class="path">May 18, Thu</div>
+                    <div class="path">on the way 1h</div>
+                    <div class="path">May 18, Thu</div>
+                  </div>
+                </div>
+                <span class="line"> </span>
+                <div class="zayvki--pathClass">
+                  <div class="class--block">
+                    <div class="class">Economy Basic</div>
+                    <div class="class">Economy Standard</div>
+                    <div class="class">Economy Plus</div>
+                  </div>
+                  <div class="price--block">
+                    <div class="price">3 081 ₽</div>
+                    <div class="price">6 012 ₽</div>
+                    <div class="price">16 756 ₽</div>
+                  </div>
+                  <div class="btn--block">
+                    <div><button onclick="location='/lc.html'" class="zayvki--btn">Choose</button></div>
+                    <div><button onclick="location='/lc.html'" class="zayvki--btn">Choose</button></div>
+                    <div><button onclick="location='/lc.html'" class="zayvki--btn">Choose</button></div>
+                  </div>
+                </div>
+            </div>
+            <div class="zayvki--moi">
+              <div class="zayvki--pathTime">
+                <div class="time--block">
+                  <div class="time">18:10</div>
+                  <div class="time">22:20</div>
+                </div>
+                <div class="path--block">
+                  <div class="path">May 18, Thu</div>
+                  <div class="path">on the way 4h 10min</div>
+                  <div class="path">May 18, Thu</div>
+                </div>
+              </div>
+              <span class="line"> </span>
+              <div class="zayvki--pathClass">
+                <div class="class--block">
+                  <div class="class">Economy Basic</div>
+                  <div class="class">Economy Standard</div>
+                  <div class="class">Economy Plus</div>
+                </div>
+                <div class="price--block">
+                  <div class="price">5 081 ₽</div>
+                  <div class="price">10 012 ₽</div>
+                  <div class="price">20 756 ₽</div>
+                </div>
+                <div class="btn--block">
+                  <div><button onclick="location='/lc.html'" class="zayvki--btn">Choose</button></div>
+                  <div><button onclick="location='/lc.html'" class="zayvki--btn">Choose</button></div>
+                  <div><button onclick="location='/lc.html'" class="zayvki--btn">Choose</button></div>
+                </div>
+              </div>
+          </div>
           </div>
         </div>
     </header>
@@ -100,7 +189,19 @@
         </div>
       </footer>
 
+      <button class="open-button" onclick="openForm()">Chat</button>
+      <div class="chat-popup" id="myForm">
+        <form action="../action_page.php" class="form-container">
+          <h1>Support Chat</h1>
+          <label for="msg"><b>your message</b></label>
+          <textarea placeholder="Write here" name="msg" required></textarea>
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">close</button>
+        </form>
+      </div>
+
     <script src="/scripts/zayvki.js"></script>
+    <script src="/scripts/chat.js"></script>
     <script src="/scripts/main.js"></script>
     <script>xCal.all("datepicker");</script>
 

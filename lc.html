@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/lc.css">
+    <link rel="stylesheet" href="/styles/chat.css">
+    <title>LC</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header--logoNav">
+            <div class="logo---block"><a onclick="location='/appl.html'" class="logo">AviaSea</a></div>
+            <div class="navigation">
+                <div class="navigation--btn"><button onclick="location='/lc.html'" class="navBtn">User</button></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="zagolovok-lc"><p class="lc">Personal Area</p></div>
+    <div class="zayvki">
+        <div class="zayvki--block">
+                <div class="zayvki--moi ">
+                    <div class="block--moi" id="zayvki">
+                        <div class="zayvki--pathTime">
+                        <div class="time--block">
+                            <div class="time">00:30</div>
+                            <div class="time">02:05</div>
+                        </div>
+                        <div class="path--block">
+                            <div class="path">May 18, Thu</div>
+                            <div class="path">on the way 1h 35min</div>
+                            <div class="path">May 18, Thu</div>
+                        </div>
+                        </div>
+                        <span class="line"> </span>
+                        <div class="zayvki--pathClass">
+                        <div class="class--block">
+                            <div class="class">Economy Basic</div>
+                        </div>
+                        <div class="price--block">
+                            <div class="price">3 072 ₽</div>
+                        </div>
+                        <div class="btn--block">
+                            <div class="pad--btn"><button class="zayvki--btn" id="btn" onclick="removeElement()"><img src="/img/img--lc/free-icon-rubbish-bin-1483063.png.svg" height="30" width="30" alt=""></button></div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="voidZav"></div>
+            <div class="zayvki--nav">
+                <div class="nav--btn"><a class="btn" href="#">APPLICATIONS</a></div>
+                <div class="nav--btn"><a class="btn" href="#">REFERRAL PROGRAM</a></div>
+                <div class="nav--btn"><a class="btn" href="#">DETAILS MANAGEMENT</a></div>
+                <div class="nav--btn"><a class="btn" href="#">SETTINGS</a></div>
+                <div class="nav--btn"><a class="btn" onclick="location='/main.html'" href="#">LOG OUT</a></div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer--block">
+          <div class="footer--flex">
+            <p class="footer--text">INFORMATION</p>
+            <a class="footer--info" href="#">REQUISITES</a>
+            <a class="footer--info" href="#">Privacy Policy</a>
+            <a class="footer--info" href="#">Terms of agreement</a>
+          </div>
+        </div>
+        <div class="footer--block">
+          <div class="footer--flex2">
+            <p class="footer--text">SUPPORT SERVICE</p>
+            <a class="footer--info" href="#">CONTACTS</a>
+            <a class="footer--info" href="#">Purchase returns</a>
+            <a class="footer--info" href="#">Site Map</a>
+          </div>
+        </div>
+        <div class="footer--block">
+          <div class="footer--flex3">
+            <p class="footer--text">PERSONAL AREA</p>
+            <a class="footer--info" href="#">Order history</a>
+            <a class="footer--info" href="#">Bookmarks</a>
+            <a class="footer--info" href="#">Newsletter</a>
+          </div>
+        </div>
+        <div class="apps footer--flex4">
+            <img class="apps--img" src="/img/img--footer/android.svg" alt="">
+            <img class="apps--img" src="/img/img--footer/appSrore.svg" alt="">
+            <img class="apps--img" src="/img/img--footer/googlePlay.svg" alt="">
+        </div>
+      </footer>
+
+      <button class="open-button" onclick="openForm()">Chat</button>
+    <div class="chat-popup" id="myForm">
+      <form action="../action_page.php" class="form-container">
+        <h1>Support Chat</h1>
+        <label for="msg"><b>your message</b></label>
+        <textarea placeholder="Write here" name="msg" required></textarea>
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">close</button>
+      </form>
+    </div>
+    <script src="/scripts/chat.js"></script>
+    <script src="/scripts/lc.js"></script>
+</body>
+</html>

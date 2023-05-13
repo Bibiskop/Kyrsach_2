@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/styles/calendar.css">
     <link rel="stylesheet" href="/styles/footer.css">
     <link rel="stylesheet" href="/styles/air.css">
+    <link rel="stylesheet" href="/styles/chat.css">
     <title>Main</title>
 </head>
 <body>
@@ -112,6 +113,17 @@
         </div>
       </footer>
 
+      <button class="open-button" onclick="openForm()">Chat</button>
+    <div class="chat-popup" id="myForm">
+      <form action="../action_page.php" class="form-container">
+        <h1>Support Chat</h1>
+        <label for="msg"><b>your message</b></label>
+        <textarea placeholder="Write here" name="msg" required></textarea>
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">close</button>
+      </form>
+    </div>
+    <script src="/scripts/chat.js"></script>
     <script src="/scripts/main.js"></script>
     <script>xCal.all("datepicker");</script>
 </body>
